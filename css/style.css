@@ -1,0 +1,33 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo {
+    width: 158px;
+    margin-top: 10px;
+    margin-right: 125px;
+}
+
+.rifo_nav {
+    height: 70px;
+    background-color: white;
+    border: white;
+    padding: 10px 0;
+}
+
+.rifo_nav a.navbar-nav,
+.rifo_nav .nav li a {
+    color: #031c4e;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.sign-up-button {
+    color: #006aff;
+    background-color: white;
+    border: 1px solid #006aff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
