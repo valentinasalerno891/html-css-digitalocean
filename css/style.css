@@ -83,6 +83,10 @@ section {
     padding-right: 50px;
 }
 
-.bg-lightgrey {
+.bg-lightgrey .carosel {
     background-color: #f3f5f9;
 }
+
+/* .carosel {
+    background-color: #f3f5f9;
+} */
