@@ -40,7 +40,7 @@ section {
 
 /* SECTION BLU */
 
-#banner {
+.bg-blu {
     background-color: #004aff;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -83,10 +83,23 @@ section {
     padding-right: 50px;
 }
 
-.bg-lightgrey .carosel {
+.bg-lightgrey,
+.carosel {
     background-color: #f3f5f9;
 }
 
 /* .carosel {
     background-color: #f3f5f9;
 } */
+
+.bg-world {
+    background-color: #003fbc;
+}
+
+tr {
+    border-bottom: 1px solid white;
+}
+
+footer {
+    background-color: #031c4e;
+}
