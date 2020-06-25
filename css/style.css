@@ -129,7 +129,7 @@ h6 {
     margin-top: 80px;
 }
 
-.deploy-and-scale p {
+.p-big-gray {
     font-size: 23px;
     font-weight: 400;
     color: #5c6a88;
@@ -162,26 +162,111 @@ h6 {
 }
 
 .row-card p {
+    color: #6f7b97;
     margin-right: 20px;
-    font-size: 18px;
+    font-size: 15px;
+}
+
+.row-down img {
+    padding-top: 20px;
 }
 
 /* CAROSEL */
-/* .carosel {
-    background-color: #f3f5f9;
-} */
 
-.carosel .boo_chevron::before {
-    content: "/f053";
-	font-family: "Font Awesome 5 Free";
+.carosel {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+
+.carosel h2 {
+    padding-bottom: 20px;
+}
+
+#img-carosel {
+    width: 100%;
+    display: block;
+}
+
+.slide-carosel {
+    position: relative;
+}
+
+.ch-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -50px;
+}
+
+.ch-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+}
+
+.p-little-blue {
+    color: #031c4e;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+.circle {
+    color: #006aff;
+}
+
+/* THE FEATURES YOUR BUSINESS.. */
+
+#the-features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.row-card a {
+    color: #006aff;
+    font-size: 16px;
+}
+
+/* SECTION BG-WORLD */
 
 .bg-world {
     background-color: #003fbc;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
 }
 
-tr {
-    border-bottom: 1px solid white;
+.bg-world h2 {
+    color: white;
+    padding-bottom: 20px;
+}
+
+tr:nth-child(6n) {
+    border-bottom: none;
+}
+
+td:nth-child(2) {
+    color: white;
+}
+
+td:first-child {
+  color: white;
+  font-weight: 500;
+}
+
+td:last-child {
+  color: #00d7d2;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* SECTION ROCKERBOX */
+
+.rockerbox {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
 }
 
 footer {
