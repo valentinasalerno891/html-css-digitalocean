@@ -2,10 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-section {
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
+/* HEADER */
 
 #logo {
     width: 158px;
@@ -17,7 +14,8 @@ section {
     height: 70px;
     background-color: white;
     border: white;
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .rifo_nav a.navbar-nav,
@@ -42,40 +40,78 @@ section {
 
 .bg-blu {
     background-color: #004aff;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 #banner h1 {
     color: white;
-    font-size: 60px;
+    font-size: 62px;
     font-weight: 700;
     padding-top: 50px;
 }
 
 #banner p {
     color: #ccd6ee;
-    font-size: 24px;
-    width: 121%;
+    font-size: 22px;
+    width: 110%;
 }
 
-.jumbotron {
+#rifo_jumbo {
+    max-width: 80%;
     margin-top: 50px;
-    margin-left: 150px;
+    margin-left: 110px;
 }
 
-.rifo_jumb {
-    padding: 10px;
-}
-
-.text-center {
+h2 {
     color: #031b4e;
-    margin: 0 10px;
+    font-size: 30px;
 }
 
 #get-started {
-    /* line-height: 60px; */
+    font-size: 30px;
+    margin-bottom: 10px;
     color: #0069ff;
+}
+
+.btn-account {
+    color: white;
+    background-color: #579aff;
+    border: #579aff;
+}
+
+.btn-account, .btn-google {
+    font-weight: 500;
+    padding: 5px 100px;
+}
+
+.btn-google {
+    color: #626262;
+    position: relative;
+}
+
+#google-logo {
+    width: 20px;
+    position: absolute;
+    transform: translate(-450%);
+}
+
+h6 {
+    color: #031b4e;
+}
+
+/* SECTION 2 */
+
+.bg-lightgrey,
+.carosel {
+    background-color: #f3f5f9;
+}
+
+.bg-lightgrey h3 {
+    font-size: 15px;
+    color: #6f7b97;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .partners img {
@@ -83,14 +119,62 @@ section {
     padding-right: 50px;
 }
 
-.bg-lightgrey,
-.carosel {
-    background-color: #f3f5f9;
+.view-customers {
+    margin-bottom: 30px;
 }
 
+/* SECTION DEPLOY AND SCALE */
+
+.deploy-and-scale h2 {
+    margin-top: 80px;
+}
+
+.deploy-and-scale p {
+    font-size: 23px;
+    font-weight: 400;
+    color: #5c6a88;
+    margin-bottom: 60px;
+}
+
+.aside {
+    font-size: 23px;
+    border-left: 2px solid #cccccc;
+    margin-left: 93px;
+}
+
+.aside ul {
+    padding-left: 10px;
+}
+
+.aside li {
+    list-style: none;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+.aside a {
+    color: #6f7b97;
+}
+
+.row-card h3 {
+    color: #031b4e;
+    font-size: 20px;
+}
+
+.row-card p {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+/* CAROSEL */
 /* .carosel {
     background-color: #f3f5f9;
 } */
+
+.carosel .boo_chevron::before {
+    content: "/f053";
+	font-family: "Font Awesome 5 Free";
+}
 
 .bg-world {
     background-color: #003fbc;

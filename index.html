@@ -15,7 +15,6 @@
         <header>
             <nav class="navbar navbar-default text-capitalize text-align:center navbar-fixed-top rifo_nav">
                 <div class="container">
-<!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
@@ -25,23 +24,21 @@
                         </button>
                         <img id=logo class="img-responsive" src="https://images.prismic.io/www-static/49aa0a09-06d2-4bba-ad20-4bcbe56ac507_logo.png?auto=compress,format" alt="logoDO">
                     </div>
-
-<!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a></li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <i class="fas fa-chevron-down"></i></a></li>
                             <li><a href="#">customers</a></li>
-                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a></li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <i class="fas fa-chevron-down"></i></a></li>
                             <li><a href="#">pricing</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#">docs</a></li>
-                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">support <span class="caret"></span></a></li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">support <i class="fas fa-chevron-down"></i></a></li>
                             <li><a href="#">login</a></li>
                             <button class="sign-up-button text-capitalize" >sign up</button>
                         </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
+                    </div>
+                </div>
             </nav>
         </header>
 
@@ -55,19 +52,27 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="jumbotron">
-                            <div class="rifo_jumb">
-                                <h2 class="text-center">Deploy your app in seconds.
-                                    <span id="get-started" class="text-center">Get started now.</span>
-                                </h2>
+                        <div id="rifo_jumbo" class="jumbotron">
+                            <div class="jumbo-content">
+                                <h2 class="text-center">Deploy your app in seconds.</h2>
+                                <div id="get-started" class="text-center">Get started now.</div>
                                 <form>
                                     <div class="form-group">
                                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                        <button class="btn btn-default">Create your account</button>
-                                        <button class="btn btn-default btn-google">Sign up with google</button>
                                     </div>
-                                    <p>By signing up you agree to the <a href="#">Terms of Service.</a></p>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-default btn-account">Create your account</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-default btn-google">
+                                            <img id="google-logo" class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/160px-Google_%22G%22_Logo.svg.png" alt="google-logo">
+                                            Sign up with google
+                                        </button>
+                                    </div>
+                                    <h6 class="text-center">By signing up you agree to the <a href="#">Terms of Service.</a></h6>
                                 </form>
                             </div>
                         </div>
@@ -88,12 +93,12 @@
                         <img src="https://web.archive.org/web/20181031061619im_/https://www.digitalocean.com/assets/media/homepage/logos/wework-be6eab32.png" alt="wework">
                         <img src="https://web.archive.org/web/20181031061612im_/https://www.digitalocean.com/assets/media/homepage/logos/splunk-06b17d75.png" alt="splunk">
                     </div>
-                    <h4><a href="#">View customer stories ></a></h4>
+                    <h5 class="view-customers"><a href="#">View customer stories ></a></h5>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="deploy-and-scale">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md-12">
@@ -101,8 +106,8 @@
                         <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
                     </div>
                     <div class="col-md-4">
-                        <nav>
-                            <ul>
+                        <nav class="aside">
+                            <ul class="text-left">
                                 <li><a href="#">Deploy</a></li>
                                 <li><a href="#">Manage</a></li>
                                 <li><a href="#">Secure</a></li>
@@ -112,22 +117,26 @@
                         </nav>
                     </div>
                     <div class="col-md-8">
-                        <div class="row row-up text-left">
+                        <div class="row row-card row-up text-left">
                             <div class="col-md-6">
+                                <img class="img-responsive" src="https://images.prismic.io/www-static/16ae92b4-6939-446c-b6a3-0ffec01cdc14_kublogoicon.svg?auto=compress,format" alt="card1">
                                 <h3>Cluster deployments</h3>
                                 <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
                             </div>
                             <div class="col-md-6">
+                                <img class="img-responsive" src="https://images.prismic.io/www-static/9d343e9c-fe74-4979-8ad9-e8efc58d6ee7_dropletinboxicon.svg?auto=compress,format" alt="card2">
                                 <h3>Optimized compute types</h3>
                                 <p>Get the compute resources you need with Standard or Optimized Droplets.</p>
                             </div>
                         </div>
-                        <div class="row row-down text-left">
+                        <div class="row row-card row-down text-left">
                             <div class="col-md-6">
+                                <img class="img-responsive" src="https://images.prismic.io/www-static/936bb585-99ba-460d-ae2f-7bbdae8896cc_stacksplusicon.svg?auto=compress,format" alt="card3">
                                 <h3>One-click apps</h3>
                                 <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
                             </div>
                             <div class="col-md-6">
+                                <img class="img-responsive" src="https://images.prismic.io/www-static/0eee6655-dfce-46b2-ab48-f40ff27d8a73_globeicon.svg?auto=compress,format" alt="card4">
                                 <h3>Global availability</h3>
                                 <p>Deploy to any of our data center regions around the world. </p>
                             </div>
@@ -142,12 +151,12 @@
         <section class="carosel">
             <div class="container">
                 <div class="row text-center">
-                    <div class="col-md-12">
+                    <div class="col-md-12 boo_chevron">
                         <h2>Designed for developers</h2>
                         <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API. </p>
                         <img src="https://web.archive.org/web/20181031061620im_/https://www.digitalocean.com/assets/media/homepage/screenshot-create-droplet-12336b41.jpg" alt="img-carosel">
                         <p>Create compute servers in 55 seconds or less.</p>
-
+                        <i class="fas fa-chevron-left"></i>
                     </div>
                 </div>
             </div>
