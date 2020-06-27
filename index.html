@@ -35,7 +35,7 @@
                             <li><a href="#">docs</a></li>
                             <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">support <i class="fas fa-chevron-down"></i></a></li>
                             <li><a href="#">login</a></li>
-                            <button class="sign-up-button text-capitalize" >sign up</button>
+                            <button class="get-in-button text-capitalize" >sign up</button>
                         </ul>
                     </div>
                 </div>
@@ -154,9 +154,9 @@
                 </div>
                 <div class="row row-carosel-down">
                     <div class="col-md-offset-2 col-md-8 slide-carosel">
-                        <i class="fas fa-chevron-left ch-left"></i>
+                        <i id="chevron" class="fas fa-chevron-left ch-left"></i>
                         <img id="img-carosel" class="img-responsive center-block" src="https://web.archive.org/web/20181031061620im_/https://www.digitalocean.com/assets/media/homepage/screenshot-create-droplet-12336b41.jpg" alt="img-carosel">
-                        <i class="fas fa-chevron-right ch-right"></i>
+                        <i id="chevron" class="fas fa-chevron-right ch-right"></i>
                     </div>
                 </div>
                 <div class="col-md-12 text-center">
@@ -176,7 +176,7 @@
                 <div class="row text-center">
                     <h2>The features your business needs </h2>
                 </div>
-                <div class="row row-card">
+                <div class="row row-card features">
                     <div class="col-md-4">
                         <img class="responsive" src="https://images.prismic.io/www-static/4083b409-5e65-4403-86a8-7ed8f501a0d8_icon-task-list-multiple.svg?auto=compress,format" alt="cardA">
                         <h3>Predictable pricing </h3>
@@ -203,12 +203,12 @@
         <section class="bg-world">
             <div class="container">
                 <div class="row">
-                    <h2 class="text-center">Service your customers around the world from 12 regions.</h2>
+                    <h2 class="p-big-white text-center">Service your customers around the world from 12 regions.</h2>
                     <div class="col-md-12">
                         <div class="col-md-6">
                             <div class="table-responsive">
                                 <table class="table">
-                                    <tr class="no-border">
+                                    <tr id="no-border-top">
                                         <td>AMS2</td>
                                         <td>Amsterdam, Netherlands</td>
                                         <td class="text-right">Test speed ></td>
@@ -244,8 +244,8 @@
                         <div class="col-md-6">
                             <div class="table-responsive">
                                 <table class="table">
-                                    <tr class="no-border">
-                                        <td>NYC2</td>
+                                    <tr id="no-border-top">
+                                        <td >NYC2</td>
                                         <td>New York, USA</td>
                                         <td class="text-right">Test speed ></td>
                                     </tr>
@@ -286,12 +286,21 @@
             <div class="container">
                 <div class="row text-center">
                     <h2>Development teams love DigitalOcean</h2>
-                    <div class="rockerbox">
-                        <img src="https://web.archive.org/web/20181031061620im_/https://www.digitalocean.com/assets/media/homepage/teams/rockerbox-logo-51462da2.png" alt="rockerlogo">
-                        <p>“We have been able to make scaling the technical infrastructure of our business cost effective and&nbsp;efficient.” </p>
-                        <h4>Rick O’Toole</h4>
-                        <h5>Co-founder and CTO </h5>
-                        <h4><a href="#">Read Story ></a></h4>
+                    <div class="col-md-offset-3 col-md-6">
+                        <div class="rockerbox-carosel">
+                            <i id="chevron" class="fas fa-chevron-left ch-left ch-left-2"></i>
+                            <img id="rockerbox-logo" class="img-responsive center-block" src="https://web.archive.org/web/20181031061620im_/https://www.digitalocean.com/assets/media/homepage/teams/rockerbox-logo-51462da2.png" alt="rockerlogo">
+                            <i id="chevron" class="fas fa-chevron-right ch-right ch-right-2"></i>
+                            <p class="p-big-gray">“We have been able to make scaling the technical infrastructure of our business cost effective and&nbsp;efficient.” </p>
+                            <h4 class="p-little-blue">Rick O’Toole</h4>
+                            <h5>Co-founder and CTO </h5>
+                            <h4><a href="#">Read Story ></a></h4>
+                        </div>
+                        <div class="circle center-block">
+                            <i class="fas fa-circle"></i>
+                            <i class="far fa-circle"></i>
+                            <i class="far fa-circle"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -301,8 +310,8 @@
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md-12">
-                        <h3>Get started now.</h3>
-                        <button>Create your account</button>
+                        <h3 class="p-big-white">Get started now.</h3>
+                        <button class="get-in-button bt-account-create" >Create your account</button>
                     </div>
                 </div>
             </div>
@@ -310,12 +319,10 @@
 
         <footer>
             <div class="container">
-                <div class="row">
+                <div class="row-footer clearfix">
                     <div class="col-md-4">
                         <img src="https://images.prismic.io/www-static%2F903fd83b-8963-42c2-baf6-44f4d6bb83f2_digitalocean-logo-mark.svg?auto=compress,format" alt="logofooter">
-                        <p>© 2018 DigitalOcean, LLC. All rights reserved.
-                            Proudly made in NY
-                        </p>
+                        <p id="copyright">© 2018 DigitalOcean, LLC. All rights reserved. <br> Proudly made in NY</p>
                         <div class="social">
                             <i class="fab fa-facebook-f"></i>
                             <i class="fab fa-instagram"></i>
@@ -323,12 +330,11 @@
                             <i class="fab fa-twitter"></i>
                             <i class="fab fa-linkedin-in"></i>
                         </div>
-
                     </div>
                     <div class="col-md-8">
-                        <div class="col-md-2">
-                            <p>Company</p>
-                            <nav>
+                        <div class="">
+                            <nav class="nav-menu">
+                                <p>Company</p>
                                 <ul>
                                     <li><a href="#">About</a></li>
                                     <li><a href="#">Leadership</a></li>
@@ -342,9 +348,9 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="col-md-2">
-                            <p>Products</p>
-                            <nav>
+                        <div class="">
+                            <nav class="nav-menu">
+                                <p>Products</p>
                                 <ul>
                                     <li><a href="#">Droplets</a></li>
                                     <li><a href="#">Spaces</a></li>
@@ -359,11 +365,10 @@
                                     <li><a href="#">Release Notes</a></li>
                                 </ul>
                             </nav>
-
                         </div>
-                        <div class="col-md-2">
-                            <p>Community</p>
-                            <nav>
+                        <div class="">
+                            <nav class="nav-menu">
+                                <p>Community</p>
                                 <ul>
                                     <li><a href="#">Tutorials</a></li>
                                     <li><a href="#">Meetups</a></li>
@@ -378,9 +383,9 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="col-md-2">
-                            <p>Support</p>
-                            <nav>
+                        <div class="clearfix">
+                            <nav class="nav-menu">
+                                <p>Support</p>
                                 <ul>
                                     <li><a href="#">Contact Support</a></li>
                                     <li><a href="#">FAQ</a></li>
@@ -394,9 +399,6 @@
             </div>
 
         </footer>
-
-
-
 
     </body>
 </html>
